@@ -1,8 +1,8 @@
-from datetime import datetime, timedelta
+from datetime import datetime
 from itertools import product
 from collections import defaultdict
 
-# filter out comboos with time conflicts, and violations of time preferences
+# filter out combos with time conflicts, and violations of time preferences
 # return clean JSON with each valid schedule
 
 
@@ -10,14 +10,14 @@ def time_str_to_minutes(t):
     # convert time string into minutes since midnight
     # ex. "2:30 PM" becomes 14 * 60 + 30 = 870
     # ex. "11:00 AM" becomes 11 * 60 + 0 = 660
-    dt = datetime.strptime(t, "%I:%M %p")
+    dt = datetime.strptime(t.strip(), "%I:%M %p")
     return dt.hour * 60 + dt.minute
 
 def get_sections_for_courses(course_list, mysql):
     # get sections for each course in course_list
     if not course_list:
         return {}
-    
+
     cur = mysql.connection.cursor()
 
     # format for SQL IN clause
@@ -68,9 +68,9 @@ def get_sections_for_courses(course_list, mysql):
     # step 3: convert seen_sections to final structure
     for (course_code, _), section in seen_sections.items():
         section_map[course_code].append(section)
-    
+
     return section_map
-      
+
 def is_within_preference(section, prefs):
     meetings = section.get("meetings", [section])  # fallback to flat sections
     for m in meetings:
@@ -99,64 +99,20 @@ def has_time_conflict(sections):
             schedule.append({"day": day, "start": start, "end": end})
     return False
 
-# def generate_schedule(course_list, time_prefs, mysql=None):
-#     if mysql:
-#         course_sections = get_sections_for_courses(course_list, mysql)
-#     else:
-#         # fallback to mock for testing
-#         raise ValueError("Database connection is required in production")
+def generate_schedule(selected_courses, time_preferences, mysql=None):
+    if not mysql:
+        raise ValueError("Database connection is required in production")
 
-#     sections_options = [course_sections.get(course, []) for course in course_list]
-#     all_combos = product(*sections_options)
+    course_sections = get_sections_for_courses(selected_courses, mysql)
 
-#     valid_schedules = []
-#     for combo in all_combos:
-#         if has_time_conflict(combo):
-#             continue
-#         if all(is_within_preference(section, time_prefs) for section in combo):
-#             schedule = {course_list[i]: combo[i] for i in range(len(course_list))}
-#             valid_schedules.append(schedule)
-#     return {"schedules": valid_schedules}
-def generate_schedule(selected_courses, time_preferences, mysql):
-    cur = mysql.connection.cursor()
+    sections_options = [course_sections.get(course, []) for course in selected_courses]
+    all_combos = product(*sections_options)
 
-    # Fetch all valid meetings
-    format_time = lambda t: (datetime.min + t).strftime("%I:%M %p") if isinstance(t, timedelta) else str(t)
-    query = """
-        SELECT cs.course_code, cs.section, cs.mode, cs.title, cs.credits,
-               sm.day_of_week, sm.start_time, sm.end_time
-        FROM CourseSections cs
-        JOIN SectionMeetings sm ON cs.id = sm.section_id
-        WHERE cs.course_code IN %s
-    """
-    cur.execute(query, (tuple(selected_courses),))
-    raw = cur.fetchall()
-
-    # Group by (course, section)
-    from collections import defaultdict
-    sections = defaultdict(lambda: {"meetings": []})
-
-    for row in raw:
-        key = (row["course_code"], row["section"])
-        sections[key].update({
-            "section": row["section"],
-            "title": row["title"],
-            "credits": float(row["credits"]),
-        })
-        sections[key]["meetings"].append({
-            "day": row["day_of_week"],
-            "start": format_time(row["start_time"]),
-            "end": format_time(row["end_time"]),
-        })
-
-    # Pick first section per course (naive)
-    schedule = {}
-    for course in selected_courses:
-        for (code, section), data in sections.items():
-            if code == course:
-                schedule[course] = data
-                break
-
-    return {"schedules": [schedule]}
-
-
+    valid_schedules = []
+    for combo in all_combos:
+        if has_time_conflict(combo):
+            continue
+        if all(is_within_preference(section, time_preferences) for section in combo):
+            schedule = {selected_courses[i]: combo[i] for i in range(len(selected_courses))}
+            valid_schedules.append(schedule)
+    return {"schedules": valid_schedules}

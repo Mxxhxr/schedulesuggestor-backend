@@ -4,6 +4,10 @@ import csv
 def load_parsed_csvs_into_raw_meetings(mysql, folder="parsed/normalized"):
     cur = mysql.connection.cursor()
 
+    # Clear out old data first so repeated reloads don't pile up duplicates
+    cur.execute("TRUNCATE TABLE RawCourseMeetings")
+    mysql.connection.commit()
+
     inserted = 0
     for fname in os.listdir(folder):
         if not fname.endswith(".csv"):

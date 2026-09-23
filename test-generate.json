@@ -1,0 +1,8 @@
+{
+  "selectedCourses": ["ACCT115", "ACCT117"],
+  "timePreferences": {
+    "Monday": {"start": "9:00 AM", "end": "5:00 PM"},
+    "Wednesday": {"start": "9:00 AM", "end": "5:00 PM"},
+    "Friday": {"start": "9:00 AM", "end": "5:00 PM"}
+  }
+}

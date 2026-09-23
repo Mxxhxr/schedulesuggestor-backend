@@ -1,48 +1,3 @@
-# def retrieve_courses(course_name, mysql):
-#     course_name = str(course_name.upper())
-#     cur = mysql.connection.cursor()
-
-#     # Get all Tables
-#     cur.execute("SHOW TABLES")
-#     tables = cur.fetchall()
-#     table_names = [table["Tables_in_pqx4tjcnq0ee8v05"] for table in tables]
-
-#     course_dict = {}
-
-#     # Go through each table to get all classes
-#     for table_name in table_names:
-#         query = f"SELECT Course, Title, DeliveryMode, Credits FROM pqx4tjcnq0ee8v05.`{table_name}`"
-
-#         cur.execute(query)
-
-#         courses = cur.fetchall()
-
-#         # Filter by class we want
-#         for course in courses:
-#             course_key = course["Course"]
-#             if course_key.startswith(course_name):
-#                 if course_key not in course_dict:
-#                     course_dict[course_key] = {
-#                         "Course": course_key,
-#                         "Title": course["Title"],
-#                         "Credits": course["Credits"],
-#                         "DeliveryModes": set(),
-#                     }
-#                 course_dict[course_key]["DeliveryModes"].add(course["DeliveryMode"])
-
-#     # Get the final list format
-#     final_list = [
-#         {
-#             "Course": entry["Course"],
-#             "Title": entry["Title"],
-#             "Credits": entry["Credits"],
-#             "DeliveryModes": list(entry["DeliveryModes"]),
-#         }
-#         for entry in course_dict.values()
-#     ]
-
-#     return {"courses": final_list}
-
 from datetime import datetime
 
 def to_mysql_time(time_str):
@@ -54,6 +9,16 @@ def to_mysql_time(time_str):
 
 def load_courses_into_schedule_tables(mysql):
     cur = mysql.connection.cursor()
+
+    # Clear out old data first so repeated runs (app restarts, /reload-data
+    # calls, Flask's debug reloader running startup twice) don't pile up
+    # duplicate SectionMeetings rows.
+    cur.execute("SET FOREIGN_KEY_CHECKS=0")
+    cur.execute("TRUNCATE TABLE SectionMeetings")
+    cur.execute("TRUNCATE TABLE CourseSections")
+    cur.execute("SET FOREIGN_KEY_CHECKS=1")
+    mysql.connection.commit()
+
     input_table = "RawCourseMeetings"
 
     cur.execute(f"""
