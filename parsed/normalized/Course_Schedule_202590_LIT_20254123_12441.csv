@@ -1,6 +1,6 @@
-Course,Section,Title,DeliveryMode,Credits,Day,StartTime,EndTime
-LIT355,101,POETRY,Face-to-Face,3.0,Thursday,18:00:00,20:50:00
-LIT365,001,NON-FICTION,Face-to-Face,3.0,Monday,10:00:00,11:20:00
-LIT365,001,NON-FICTION,Face-to-Face,3.0,Wednesday,10:00:00,11:20:00
-LIT365,HM1,NON-FICTION- HONORS,Face-to-Face,3.0,Monday,10:00:00,11:20:00
-LIT365,HM1,NON-FICTION- HONORS,Face-to-Face,3.0,Wednesday,10:00:00,11:20:00
+Course,Section,Title,DeliveryMode,Credits,Day,StartTime,EndTime,Instructor
+LIT355,101,POETRY,Face-to-Face,3.0,Thursday,18:00:00,20:50:00,"Curley, Jonathan"
+LIT365,001,NON-FICTION,Face-to-Face,3.0,Monday,10:00:00,11:20:00,"Kimmelman, Burt"
+LIT365,001,NON-FICTION,Face-to-Face,3.0,Wednesday,10:00:00,11:20:00,"Kimmelman, Burt"
+LIT365,HM1,NON-FICTION- HONORS,Face-to-Face,3.0,Monday,10:00:00,11:20:00,"Kimmelman, Burt"
+LIT365,HM1,NON-FICTION- HONORS,Face-to-Face,3.0,Wednesday,10:00:00,11:20:00,"Kimmelman, Burt"

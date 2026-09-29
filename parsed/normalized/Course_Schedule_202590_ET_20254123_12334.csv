@@ -1,3 +1,3 @@
-Course,Section,Title,DeliveryMode,Credits,Day,StartTime,EndTime
-ET101,001,INTRO TO ENGNR TECHNLGY,Face-to-Face,0.0,Monday,14:30:00,15:50:00
-ET450,101,ET CAPSTONE PROJECT,Face-to-Face,3.0,Friday,18:00:00,22:05:00
+Course,Section,Title,DeliveryMode,Credits,Day,StartTime,EndTime,Instructor
+ET101,001,INTRO TO ENGNR TECHNLGY,Face-to-Face,0.0,Monday,14:30:00,15:50:00,"Lieber, Samuel"
+ET450,101,ET CAPSTONE PROJECT,Face-to-Face,3.0,Friday,18:00:00,22:05:00,

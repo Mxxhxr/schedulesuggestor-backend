@@ -22,7 +22,7 @@ def load_courses_into_schedule_tables(mysql):
     input_table = "RawCourseMeetings"
 
     cur.execute(f"""
-        SELECT Course, Section, Title, DeliveryMode, Credits, Day, StartTime, EndTime
+        SELECT Course, Section, Title, DeliveryMode, Credits, Day, StartTime, EndTime, Instructor
         FROM `{input_table}`
     """)
     rows = cur.fetchall()
@@ -52,9 +52,9 @@ def load_courses_into_schedule_tables(mysql):
                 section_id = result['id']
             else:
                 cur.execute("""
-                    INSERT INTO CourseSections (course_code, section, mode, title, credits)
-                    VALUES (%s, %s, %s, %s, %s)
-                """, (row['Course'], row['Section'], row['DeliveryMode'], row['Title'], credits))
+                    INSERT INTO CourseSections (course_code, section, mode, title, credits, instructor)
+                    VALUES (%s, %s, %s, %s, %s, %s)
+                """, (row['Course'], row['Section'], row['DeliveryMode'], row['Title'], credits, row['Instructor']))
                 mysql.connection.commit()
                 section_id = cur.lastrowid
 

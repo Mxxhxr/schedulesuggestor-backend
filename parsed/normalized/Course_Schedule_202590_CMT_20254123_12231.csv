@@ -1,3 +1,3 @@
-Course,Section,Title,DeliveryMode,Credits,Day,StartTime,EndTime
-CMT332,451,STRUCTURAL SYST CONSTRUC,Online Newark,3.0,,,
-CMT452,101,MECH & ELEC SYST-CONSTRU,Face-to-Face,3.0,Friday,18:00:00,22:05:00
+Course,Section,Title,DeliveryMode,Credits,Day,StartTime,EndTime,Instructor
+CMT332,451,STRUCTURAL SYST CONSTRUC,Online Newark,3.0,,,,"Washington, David"
+CMT452,101,MECH & ELEC SYST-CONSTRU,Face-to-Face,3.0,Friday,18:00:00,22:05:00,"Botros, Mina"

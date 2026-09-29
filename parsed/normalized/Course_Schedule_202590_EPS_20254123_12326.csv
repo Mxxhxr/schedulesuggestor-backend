@@ -1,9 +1,9 @@
-Course,Section,Title,DeliveryMode,Credits,Day,StartTime,EndTime
-EPS202,101,SOCIETY TECHN & ENVIRONMNT,Face-to-Face,3.0,Tuesday,18:00:00,20:50:00
-EPS202,451,SOCIETY TECHN & ENVIRONMNT,Online Newark,3.0,,,
-EPS202,HM1,"SOCIETY, TECHNOLOGY, AND THE ENVIRONMENT - HONORS",Face-to-Face,3.0,Tuesday,18:00:00,20:50:00
-EPS700B,843,MASTER'S PROJECT,Face-to-Face,3.0,,,
-EPS701B,843,MASTER'S THESIS,Face-to-Face,3.0,,,
-EPS701C,843,MASTER'S THESIS,Face-to-Face,6.0,,,
-EPS725,843,INDEPENDENT STUDY I,Face-to-Face,3.0,,,
-EPS726,843,INDEPENDENT STUDY II,Face-to-Face,3.0,,,
+Course,Section,Title,DeliveryMode,Credits,Day,StartTime,EndTime,Instructor
+EPS202,101,SOCIETY TECHN & ENVIRONMNT,Face-to-Face,3.0,Tuesday,18:00:00,20:50:00,
+EPS202,451,SOCIETY TECHN & ENVIRONMNT,Online Newark,3.0,,,,"Bonchonsky, Michael"
+EPS202,HM1,"SOCIETY, TECHNOLOGY, AND THE ENVIRONMENT - HONORS",Face-to-Face,3.0,Tuesday,18:00:00,20:50:00,
+EPS700B,843,MASTER'S PROJECT,Face-to-Face,3.0,,,,"Qiu, Zeyuan"
+EPS701B,843,MASTER'S THESIS,Face-to-Face,3.0,,,,"Qiu, Zeyuan"
+EPS701C,843,MASTER'S THESIS,Face-to-Face,6.0,,,,"Qiu, Zeyuan"
+EPS725,843,INDEPENDENT STUDY I,Face-to-Face,3.0,,,,"Qiu, Zeyuan"
+EPS726,843,INDEPENDENT STUDY II,Face-to-Face,3.0,,,,"Qiu, Zeyuan"

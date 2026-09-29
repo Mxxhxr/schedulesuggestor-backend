@@ -1,82 +1,82 @@
-Course,Section,Title,DeliveryMode,Credits,Day,StartTime,EndTime
-EM602,101,MANAGEMENT SCIENCE,Face-to-Face,3.0,Thursday,18:00:00,20:50:00
-EM602,851,MANAGEMENT SCIENCE,Online Virtual,3.0,,,
-EM602,853,MANAGEMENT SCIENCE,Online Newark,3.0,,,
-EM631,851,LEGAL ASPCT IN ENVR ENGR,Online Newark,3.0,,,
-EM632,851,LEGAL ASPECTS IN CONSTR,Online Virtual,3.0,,,
-EM633,101,LEGAL ASPCTS OF HLT SFTY,Face-to-Face,3.0,Tuesday,18:00:00,20:50:00
-EM636,101,PROJECT MANAGEMENT,Hybrid,3.0,Wednesday,18:00:00,20:50:00
-EM636,103,PROJECT MANAGEMENT,Hybrid,3.0,Wednesday,18:00:00,20:50:00
-EM636,851,PROJECT MANAGEMENT,Online Virtual,3.0,,,
-EM636,853,PROJECT MANAGEMENT,Online Newark,3.0,,,
-EM637,851,PROJECT CONTROL,Online Virtual,3.0,,,
-EM637,853,PROJECT CONTROL,Online Newark,3.0,,,
-EM640,851,DISTRIBUTION LOGISTICS,Online Virtual,3.0,,,
-EM640,853,DISTRIBUTION LOGISTICS,Online Newark,3.0,,,
-EM691,851,COST ESTIMTNG CAPTL PROJ,Online Virtual,3.0,,,
-EM691,853,COST ESTIMTNG CAPTL PROJ,Online Newark,3.0,,,
-EM700B,361,MASTER'S PROJECT,Face-to-Face,3.0,,,
-EM700B,362,MASTER'S PROJECT,Face-to-Face,3.0,,,
-EM700B,390,MASTER'S PROJECT,Face-to-Face,3.0,,,
-EM700B,391,MASTER'S PROJECT,Face-to-Face,3.0,,,
-EM700B,392,MASTER'S PROJECT,Face-to-Face,3.0,,,
-EM700B,394,MASTER'S PROJECT,Face-to-Face,3.0,,,
-EM700B,400,MASTER'S PROJECT,Face-to-Face,3.0,,,
-EM700B,402,MASTER'S PROJECT,Face-to-Face,3.0,,,
-EM700B,403,MASTER'S PROJECT,Face-to-Face,3.0,,,
-EM700B,407,MASTER'S PROJECT,Face-to-Face,3.0,,,
-EM700B,462,MASTER'S PROJECT,Face-to-Face,3.0,,,
-EM700B,486,MASTER'S PROJECT,Face-to-Face,3.0,,,
-EM700B,487,MASTER'S PROJECT,Face-to-Face,3.0,,,
-EM701B,361,MASTER'S THESIS,Face-to-Face,3.0,,,
-EM701B,362,MASTER'S THESIS,Face-to-Face,3.0,,,
-EM701B,390,MASTER'S THESIS,Face-to-Face,3.0,,,
-EM701B,391,MASTER'S THESIS,Face-to-Face,3.0,,,
-EM701B,392,MASTER'S THESIS,Face-to-Face,3.0,,,
-EM701B,394,MASTER'S THESIS,Face-to-Face,3.0,,,
-EM701B,400,MASTER'S THESIS,Face-to-Face,3.0,,,
-EM701B,402,MASTER'S THESIS,Face-to-Face,3.0,,,
-EM701B,403,MASTER'S THESIS,Face-to-Face,3.0,,,
-EM701B,407,MASTER'S THESIS,Face-to-Face,3.0,,,
-EM701B,462,MASTER'S THESIS,Face-to-Face,3.0,,,
-EM701B,486,MASTER'S THESIS,Face-to-Face,3.0,,,
-EM701B,487,MASTER'S THESIS,Face-to-Face,3.0,,,
-EM701C,361,MASTER'S THESIS,Face-to-Face,6.0,,,
-EM701C,362,MASTER'S THESIS,Face-to-Face,6.0,,,
-EM701C,390,MASTER'S THESIS,Face-to-Face,6.0,,,
-EM701C,391,MASTER'S THESIS,Face-to-Face,6.0,,,
-EM701C,392,MASTER'S THESIS,Face-to-Face,6.0,,,
-EM701C,394,MASTER'S THESIS,Face-to-Face,6.0,,,
-EM701C,400,MASTER'S THESIS,Face-to-Face,6.0,,,
-EM701C,402,MASTER'S THESIS,Face-to-Face,6.0,,,
-EM701C,403,MASTER'S THESIS,Face-to-Face,6.0,,,
-EM701C,407,MASTER'S THESIS,Face-to-Face,6.0,,,
-EM701C,462,MASTER'S THESIS,Face-to-Face,6.0,,,
-EM701C,486,MASTER'S THESIS,Face-to-Face,6.0,,,
-EM701C,487,MASTER'S THESIS,Face-to-Face,6.0,,,
-EM725,361,INDEPENDENT STUDY I,Face-to-Face,3.0,,,
-EM725,362,INDEPENDENT STUDY I,Face-to-Face,3.0,,,
-EM725,390,INDEPENDENT STUDY I,Face-to-Face,3.0,,,
-EM725,391,INDEPENDENT STUDY I,Face-to-Face,3.0,,,
-EM725,392,INDEPENDENT STUDY I,Face-to-Face,3.0,,,
-EM725,394,INDEPENDENT STUDY I,Face-to-Face,3.0,,,
-EM725,400,INDEPENDENT STUDY I,Face-to-Face,3.0,,,
-EM725,402,INDEPENDENT STUDY I,Face-to-Face,3.0,,,
-EM725,403,INDEPENDENT STUDY I,Face-to-Face,3.0,,,
-EM725,407,INDEPENDENT STUDY I,Face-to-Face,3.0,,,
-EM725,462,INDEPENDENT STUDY I,Face-to-Face,3.0,,,
-EM725,486,INDEPENDENT STUDY I,Face-to-Face,3.0,,,
-EM725,487,INDEPENDENT STUDY I,Face-to-Face,3.0,,,
-EM726,361,INDEPENDENT STUDY II,Face-to-Face,3.0,,,
-EM726,362,INDEPENDENT STUDY II,Face-to-Face,3.0,,,
-EM726,390,INDEPENDENT STUDY II,Face-to-Face,3.0,,,
-EM726,391,INDEPENDENT STUDY II,Face-to-Face,3.0,,,
-EM726,392,INDEPENDENT STUDY II,Face-to-Face,3.0,,,
-EM726,394,INDEPENDENT STUDY II,Face-to-Face,3.0,,,
-EM726,400,INDEPENDENT STUDY II,Face-to-Face,3.0,,,
-EM726,402,INDEPENDENT STUDY II,Face-to-Face,3.0,,,
-EM726,403,INDEPENDENT STUDY II,Face-to-Face,3.0,,,
-EM726,407,INDEPENDENT STUDY II,Face-to-Face,3.0,,,
-EM726,462,INDEPENDENT STUDY II,Face-to-Face,3.0,,,
-EM726,486,INDEPENDENT STUDY II,Face-to-Face,3.0,,,
-EM726,487,INDEPENDENT STUDY II,Face-to-Face,3.0,,,
+Course,Section,Title,DeliveryMode,Credits,Day,StartTime,EndTime,Instructor
+EM602,101,MANAGEMENT SCIENCE,Face-to-Face,3.0,Thursday,18:00:00,20:50:00,"Abdel-Malek, Layek"
+EM602,851,MANAGEMENT SCIENCE,Online Virtual,3.0,,,,"Cai, Wenbo"
+EM602,853,MANAGEMENT SCIENCE,Online Newark,3.0,,,,
+EM631,851,LEGAL ASPCT IN ENVR ENGR,Online Newark,3.0,,,,"Bonchonsky, Michael"
+EM632,851,LEGAL ASPECTS IN CONSTR,Online Virtual,3.0,,,,"Avoryie, Abigail"
+EM633,101,LEGAL ASPCTS OF HLT SFTY,Face-to-Face,3.0,Tuesday,18:00:00,20:50:00,"Kothari, Prakash"
+EM636,101,PROJECT MANAGEMENT,Hybrid,3.0,Wednesday,18:00:00,20:50:00,"Zoppi, Philip"
+EM636,103,PROJECT MANAGEMENT,Hybrid,3.0,Wednesday,18:00:00,20:50:00,
+EM636,851,PROJECT MANAGEMENT,Online Virtual,3.0,,,,"Naraine, Deoraj"
+EM636,853,PROJECT MANAGEMENT,Online Newark,3.0,,,,
+EM637,851,PROJECT CONTROL,Online Virtual,3.0,,,,"Snyder, Harris"
+EM637,853,PROJECT CONTROL,Online Newark,3.0,,,,
+EM640,851,DISTRIBUTION LOGISTICS,Online Virtual,3.0,,,,"Yagci, Ismail"
+EM640,853,DISTRIBUTION LOGISTICS,Online Newark,3.0,,,,
+EM691,851,COST ESTIMTNG CAPTL PROJ,Online Virtual,3.0,,,,"Jaramillo Cueva, Cesar Augusto"
+EM691,853,COST ESTIMTNG CAPTL PROJ,Online Newark,3.0,,,,
+EM700B,361,MASTER'S PROJECT,Face-to-Face,3.0,,,,"Barak Ventura, Roni"
+EM700B,362,MASTER'S PROJECT,Face-to-Face,3.0,,,,"Yin, Wei"
+EM700B,390,MASTER'S PROJECT,Face-to-Face,3.0,,,,"Abdel-Malek, Layek"
+EM700B,391,MASTER'S PROJECT,Face-to-Face,3.0,,,,"Bengu, Golgen"
+EM700B,392,MASTER'S PROJECT,Face-to-Face,3.0,,,,"Bladikas, Athanassios"
+EM700B,394,MASTER'S PROJECT,Face-to-Face,3.0,,,,"Das, Sanchoy"
+EM700B,400,MASTER'S PROJECT,Face-to-Face,3.0,,,,"Abdou, George"
+EM700B,402,MASTER'S PROJECT,Face-to-Face,3.0,,,,"Sengupta, Arijit"
+EM700B,403,MASTER'S PROJECT,Face-to-Face,3.0,,,,"Tricamo, Stephen"
+EM700B,407,MASTER'S PROJECT,Face-to-Face,3.0,,,,"Ranky, Paul"
+EM700B,462,MASTER'S PROJECT,Face-to-Face,3.0,,,,"Park, SangWoo"
+EM700B,486,MASTER'S PROJECT,Face-to-Face,3.0,,,,"Shen, Bo"
+EM700B,487,MASTER'S PROJECT,Face-to-Face,3.0,,,,"Cai, Wenbo"
+EM701B,361,MASTER'S THESIS,Face-to-Face,3.0,,,,"Barak Ventura, Roni"
+EM701B,362,MASTER'S THESIS,Face-to-Face,3.0,,,,"Yin, Wei"
+EM701B,390,MASTER'S THESIS,Face-to-Face,3.0,,,,"Abdel-Malek, Layek"
+EM701B,391,MASTER'S THESIS,Face-to-Face,3.0,,,,"Bengu, Golgen"
+EM701B,392,MASTER'S THESIS,Face-to-Face,3.0,,,,"Bladikas, Athanassios"
+EM701B,394,MASTER'S THESIS,Face-to-Face,3.0,,,,"Das, Sanchoy"
+EM701B,400,MASTER'S THESIS,Face-to-Face,3.0,,,,"Abdou, George"
+EM701B,402,MASTER'S THESIS,Face-to-Face,3.0,,,,"Sengupta, Arijit"
+EM701B,403,MASTER'S THESIS,Face-to-Face,3.0,,,,"Tricamo, Stephen"
+EM701B,407,MASTER'S THESIS,Face-to-Face,3.0,,,,"Ranky, Paul"
+EM701B,462,MASTER'S THESIS,Face-to-Face,3.0,,,,"Park, SangWoo"
+EM701B,486,MASTER'S THESIS,Face-to-Face,3.0,,,,"Shen, Bo"
+EM701B,487,MASTER'S THESIS,Face-to-Face,3.0,,,,"Cai, Wenbo"
+EM701C,361,MASTER'S THESIS,Face-to-Face,6.0,,,,"Barak Ventura, Roni"
+EM701C,362,MASTER'S THESIS,Face-to-Face,6.0,,,,"Yin, Wei"
+EM701C,390,MASTER'S THESIS,Face-to-Face,6.0,,,,"Abdel-Malek, Layek"
+EM701C,391,MASTER'S THESIS,Face-to-Face,6.0,,,,"Bengu, Golgen"
+EM701C,392,MASTER'S THESIS,Face-to-Face,6.0,,,,"Bladikas, Athanassios"
+EM701C,394,MASTER'S THESIS,Face-to-Face,6.0,,,,"Das, Sanchoy"
+EM701C,400,MASTER'S THESIS,Face-to-Face,6.0,,,,"Abdou, George"
+EM701C,402,MASTER'S THESIS,Face-to-Face,6.0,,,,"Sengupta, Arijit"
+EM701C,403,MASTER'S THESIS,Face-to-Face,6.0,,,,"Tricamo, Stephen"
+EM701C,407,MASTER'S THESIS,Face-to-Face,6.0,,,,"Ranky, Paul"
+EM701C,462,MASTER'S THESIS,Face-to-Face,6.0,,,,"Park, SangWoo"
+EM701C,486,MASTER'S THESIS,Face-to-Face,6.0,,,,"Shen, Bo"
+EM701C,487,MASTER'S THESIS,Face-to-Face,6.0,,,,"Cai, Wenbo"
+EM725,361,INDEPENDENT STUDY I,Face-to-Face,3.0,,,,"Barak Ventura, Roni"
+EM725,362,INDEPENDENT STUDY I,Face-to-Face,3.0,,,,"Yin, Wei"
+EM725,390,INDEPENDENT STUDY I,Face-to-Face,3.0,,,,"Abdel-Malek, Layek"
+EM725,391,INDEPENDENT STUDY I,Face-to-Face,3.0,,,,"Bengu, Golgen"
+EM725,392,INDEPENDENT STUDY I,Face-to-Face,3.0,,,,"Bladikas, Athanassios"
+EM725,394,INDEPENDENT STUDY I,Face-to-Face,3.0,,,,"Das, Sanchoy"
+EM725,400,INDEPENDENT STUDY I,Face-to-Face,3.0,,,,"Abdou, George"
+EM725,402,INDEPENDENT STUDY I,Face-to-Face,3.0,,,,"Sengupta, Arijit"
+EM725,403,INDEPENDENT STUDY I,Face-to-Face,3.0,,,,"Tricamo, Stephen"
+EM725,407,INDEPENDENT STUDY I,Face-to-Face,3.0,,,,"Ranky, Paul"
+EM725,462,INDEPENDENT STUDY I,Face-to-Face,3.0,,,,"Park, SangWoo"
+EM725,486,INDEPENDENT STUDY I,Face-to-Face,3.0,,,,"Shen, Bo"
+EM725,487,INDEPENDENT STUDY I,Face-to-Face,3.0,,,,"Cai, Wenbo"
+EM726,361,INDEPENDENT STUDY II,Face-to-Face,3.0,,,,"Barak Ventura, Roni"
+EM726,362,INDEPENDENT STUDY II,Face-to-Face,3.0,,,,"Yin, Wei"
+EM726,390,INDEPENDENT STUDY II,Face-to-Face,3.0,,,,"Abdel-Malek, Layek"
+EM726,391,INDEPENDENT STUDY II,Face-to-Face,3.0,,,,"Bengu, Golgen"
+EM726,392,INDEPENDENT STUDY II,Face-to-Face,3.0,,,,"Bladikas, Athanassios"
+EM726,394,INDEPENDENT STUDY II,Face-to-Face,3.0,,,,"Das, Sanchoy"
+EM726,400,INDEPENDENT STUDY II,Face-to-Face,3.0,,,,"Abdou, George"
+EM726,402,INDEPENDENT STUDY II,Face-to-Face,3.0,,,,"Sengupta, Arijit"
+EM726,403,INDEPENDENT STUDY II,Face-to-Face,3.0,,,,"Tricamo, Stephen"
+EM726,407,INDEPENDENT STUDY II,Face-to-Face,3.0,,,,"Ranky, Paul"
+EM726,462,INDEPENDENT STUDY II,Face-to-Face,3.0,,,,"Park, SangWoo"
+EM726,486,INDEPENDENT STUDY II,Face-to-Face,3.0,,,,"Shen, Bo"
+EM726,487,INDEPENDENT STUDY II,Face-to-Face,3.0,,,,"Cai, Wenbo"

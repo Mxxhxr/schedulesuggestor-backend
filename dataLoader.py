@@ -26,11 +26,12 @@ def load_parsed_csvs_into_raw_meetings(mysql, folder="parsed/normalized"):
                     day = row["Day"].strip()
                     start = row["StartTime"].strip()
                     end = row["EndTime"].strip()
+                    instructor = (row.get("Instructor") or "").strip()
 
                     cur.execute("""
-                        INSERT INTO RawCourseMeetings (Course, Section, Title, DeliveryMode, Credits, Day, StartTime, EndTime)
-                        VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
-                    """, (course, section, title, mode, credits, day, start, end))
+                        INSERT INTO RawCourseMeetings (Course, Section, Title, DeliveryMode, Credits, Day, StartTime, EndTime, Instructor)
+                        VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
+                    """, (course, section, title, mode, credits, day, start, end, instructor))
                     inserted += 1
                 except Exception as e:
                     print(f"Skipping row in {fname} due to error: {e}")

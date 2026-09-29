@@ -1,15 +1,15 @@
-Course,Section,Title,DeliveryMode,Credits,Day,StartTime,EndTime
-ECON201,001,ECONOMICS,Hybrid,3.0,Friday,14:30:00,17:20:00
-ECON201,003,ECONOMICS,Hybrid,3.0,Friday,14:30:00,17:20:00
-ECON201,101,ECONOMICS,Hybrid,3.0,Wednesday,18:00:00,20:50:00
-ECON201,103,ECONOMICS,Hybrid,3.0,Wednesday,18:00:00,20:50:00
-ECON201,451,ECONOMICS,Online Newark,3.0,,,
-ECON265,001,MICROECONOMICS,Face-to-Face,3.0,Monday,13:00:00,14:20:00
-ECON265,001,MICROECONOMICS,Face-to-Face,3.0,Wednesday,13:00:00,14:20:00
-ECON265,451,MICROECONOMICS,Online Newark,3.0,,,
-ECON265,453,MICROECONOMICS,Online Newark,3.0,,,
-ECON265,455,MICROECONOMICS,Online Newark,3.0,,,
-ECON265,457,MICROECONOMICS,Online Newark,3.0,,,
-ECON265,459,MICROECONOMICS,Online Newark,3.0,,,
-ECON266,101,MACROECONOMICS,Face-to-Face,3.0,Friday,18:00:00,20:50:00
-ECON266,451,MACROECONOMICS,Online Newark,3.0,,,
+Course,Section,Title,DeliveryMode,Credits,Day,StartTime,EndTime,Instructor
+ECON201,001,ECONOMICS,Hybrid,3.0,Friday,14:30:00,17:20:00,"Bonitsis, Theologos"
+ECON201,003,ECONOMICS,Hybrid,3.0,Friday,14:30:00,17:20:00,"Bonitsis, Theologos"
+ECON201,101,ECONOMICS,Hybrid,3.0,Wednesday,18:00:00,20:50:00,"Bonitsis, Theologos"
+ECON201,103,ECONOMICS,Hybrid,3.0,Wednesday,18:00:00,20:50:00,"Bonitsis, Theologos"
+ECON201,451,ECONOMICS,Online Newark,3.0,,,,"Bonitsis, Theologos"
+ECON265,001,MICROECONOMICS,Face-to-Face,3.0,Monday,13:00:00,14:20:00,"Chou, Porchiung"
+ECON265,001,MICROECONOMICS,Face-to-Face,3.0,Wednesday,13:00:00,14:20:00,"Chou, Porchiung"
+ECON265,451,MICROECONOMICS,Online Newark,3.0,,,,"Chou, Porchiung"
+ECON265,453,MICROECONOMICS,Online Newark,3.0,,,,"Bataille, Edner"
+ECON265,455,MICROECONOMICS,Online Newark,3.0,,,,"Chou, Porchiung"
+ECON265,457,MICROECONOMICS,Online Newark,3.0,,,,"Guider, Joseph"
+ECON265,459,MICROECONOMICS,Online Newark,3.0,,,,"Chou, Porchiung"
+ECON266,101,MACROECONOMICS,Face-to-Face,3.0,Friday,18:00:00,20:50:00,"Chou, Porchiung"
+ECON266,451,MACROECONOMICS,Online Newark,3.0,,,,"Bataille, Edner"

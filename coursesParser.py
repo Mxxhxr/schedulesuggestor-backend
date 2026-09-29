@@ -91,7 +91,7 @@ def normalize_csv(input_path, output_path):
     with open(input_path, newline='') as infile, open(output_path, 'w', newline='') as outfile:
         reader = csv.DictReader(infile)
         writer = csv.DictWriter(outfile, fieldnames=[
-            "Course", "Section", "Title", "DeliveryMode", "Credits", "Day", "StartTime", "EndTime"
+            "Course", "Section", "Title", "DeliveryMode", "Credits", "Day", "StartTime", "EndTime", "Instructor"
         ])
         writer.writeheader()
 
@@ -100,6 +100,7 @@ def normalize_csv(input_path, output_path):
             section = row.get("Section", "").strip()
             title = row.get("Title", "").strip()
             delivery = row.get("Delivery Mode", "").strip()
+            instructor = row.get("Instructor", "").strip()
 
 
             raw_credits = row.get("Credits", "").strip()
@@ -135,7 +136,8 @@ def normalize_csv(input_path, output_path):
                         "Credits": credits,
                         "Day": DAY_MAP[d],
                         "StartTime": start,
-                        "EndTime": end
+                        "EndTime": end,
+                        "Instructor": instructor
                     })
             else:
                 writer.writerow({
@@ -146,7 +148,8 @@ def normalize_csv(input_path, output_path):
                     "Credits": credits,
                     "Day": "",
                     "StartTime": "",
-                    "EndTime": ""
+                    "EndTime": "",
+                    "Instructor": instructor
                 })
 
 # Normalize all files in parsed/ to parsed/normalized/

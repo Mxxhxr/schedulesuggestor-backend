@@ -1,12 +1,12 @@
-Course,Section,Title,DeliveryMode,Credits,Day,StartTime,EndTime
-MARC701B,002,MASTER'S THESIS,Face-to-Face,3.0,,,
-MARC701B,003,MASTER'S THESIS,Face-to-Face,3.0,,,
-MARC701B,004,MASTER'S THESIS,Face-to-Face,3.0,,,
-MARC701B,011,MASTER'S THESIS,Face-to-Face,3.0,,,
-MARC701B,020,MASTER'S THESIS,Face-to-Face,3.0,,,
-MARC701B,032,MASTER'S THESIS,Face-to-Face,3.0,,,
-MARC701B,035,MASTER'S THESIS,Face-to-Face,3.0,,,
-MARC701B,037,MASTER'S THESIS,Face-to-Face,3.0,,,
-MARC701C,002,MASTER'S THESIS,Face-to-Face,6.0,,,
-MARC701C,005,MASTER'S THESIS,Face-to-Face,6.0,,,
-MARC701C,037,MASTER'S THESIS,Face-to-Face,6.0,,,
+Course,Section,Title,DeliveryMode,Credits,Day,StartTime,EndTime,Instructor
+MARC701B,002,MASTER'S THESIS,Face-to-Face,3.0,,,,
+MARC701B,003,MASTER'S THESIS,Face-to-Face,3.0,,,,
+MARC701B,004,MASTER'S THESIS,Face-to-Face,3.0,,,,
+MARC701B,011,MASTER'S THESIS,Face-to-Face,3.0,,,,
+MARC701B,020,MASTER'S THESIS,Face-to-Face,3.0,,,,"Schuman, Anthony"
+MARC701B,032,MASTER'S THESIS,Face-to-Face,3.0,,,,"Bartle, Andrew"
+MARC701B,035,MASTER'S THESIS,Face-to-Face,3.0,,,,
+MARC701B,037,MASTER'S THESIS,Face-to-Face,3.0,,,,
+MARC701C,002,MASTER'S THESIS,Face-to-Face,6.0,,,,
+MARC701C,005,MASTER'S THESIS,Face-to-Face,6.0,,,,
+MARC701C,037,MASTER'S THESIS,Face-to-Face,6.0,,,,

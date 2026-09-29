@@ -32,6 +32,7 @@ def get_sections_for_courses(course_list, mysql):
             cs.mode,
             cs.title,
             cs.credits,
+            cs.instructor,
             sm.day_of_week,
             TIME_FORMAT(sm.start_time, '%%l:%%i %%p') as start,
             TIME_FORMAT(sm.end_time, '%%l:%%i %%p') as end
@@ -56,6 +57,7 @@ def get_sections_for_courses(course_list, mysql):
                 "mode": row['mode'],
                 "title": row['title'],
                 "credits": row['credits'],
+                "instructor": row['instructor'],
                 "meetings": []
             }
 
