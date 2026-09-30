@@ -107,6 +107,17 @@ def generate_schedule(selected_courses, time_preferences, mysql=None):
 
     course_sections = get_sections_for_courses(selected_courses, mysql)
 
+    # A course with zero sections (e.g. fully-async online, or not found in
+    # the DB) makes every combination impossible before we even get to
+    # conflict/preference checking. Surface that explicitly instead of just
+    # returning an empty schedules list with no explanation.
+    unavailable_courses = [c for c in selected_courses if not course_sections.get(c)]
+    if unavailable_courses:
+        return {
+            "schedules": [],
+            "unavailable_courses": unavailable_courses
+        }
+
     sections_options = [course_sections.get(course, []) for course in selected_courses]
     all_combos = product(*sections_options)
 
