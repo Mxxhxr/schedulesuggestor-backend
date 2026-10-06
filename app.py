@@ -1,3 +1,4 @@
+import os
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 from flask_mysqldb import MySQL
@@ -6,25 +7,28 @@ from retrieveCourses import retrieve_courses, load_courses_into_schedule_tables
 from generateSchedule import generate_schedule
 from dataLoader import load_parsed_csvs_into_raw_meetings
 
+load_dotenv()  # was imported but never called before — .env was silently ignored
+
 app = Flask(__name__)
-# CORS(app)  # works since frontend is on same host
 CORS(app)
 
 
 # MySQL config
-# zaids config:
-# app.config["MYSQL_USER"] = "zk61pnc0vuvwvfdh"
-# app.config["MYSQL_PASSWORD"] = sql_password
-# app.config["MYSQL_HOST"] = "g84t6zfpijzwx08q.cbetxkdyhwsb.us-east-1.rds.amazonaws.com"
-# app.config["MYSQL_DB"] = "pqx4tjcnq0ee8v05"
-# app.config["MYSQL_CURSORCLASS"] = "DictCursor"
 
-# local config:
-app.config["MYSQL_USER"] = "root"
-app.config["MYSQL_PASSWORD"] = "2002"
-app.config["MYSQL_HOST"] = "localhost"
+# AWS RDS config (Maahir's own account):
+app.config["MYSQL_USER"] = "admin"
+app.config["MYSQL_PASSWORD"] = os.environ.get("sqlpass")
+app.config["MYSQL_HOST"] = "schedule-suggestor-db.c1cwew8yw4od.us-east-2.rds.amazonaws.com"
 app.config["MYSQL_DB"] = "schedule_suggestor"
 app.config["MYSQL_CURSORCLASS"] = "DictCursor"
+
+# local config (uncomment this block and comment the AWS block above to
+# develop against your local MySQL instead):
+# app.config["MYSQL_USER"] = "root"
+# app.config["MYSQL_PASSWORD"] = "2002"
+# app.config["MYSQL_HOST"] = "localhost"
+# app.config["MYSQL_DB"] = "schedule_suggestor"
+# app.config["MYSQL_CURSORCLASS"] = "DictCursor"
 
 mysql = MySQL(app)
 with app.app_context():
