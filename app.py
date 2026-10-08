@@ -31,8 +31,13 @@ app.config["MYSQL_CURSORCLASS"] = "DictCursor"
 # app.config["MYSQL_CURSORCLASS"] = "DictCursor"
 
 mysql = MySQL(app)
-with app.app_context():
-    load_courses_into_schedule_tables(mysql)  # load courses into schedule tables on startup
+
+# Rebuilding the tables on startup is slow (thousands of single-row inserts) and
+# empties the tables while it runs, so on a server it's opt-in. Normally use
+# POST /reload-data to rebuild on demand; set REBUILD_ON_START=1 to also do it at boot.
+if os.environ.get("REBUILD_ON_START") == "1":
+    with app.app_context():
+        load_courses_into_schedule_tables(mysql)
 
 @app.route("/")
 def index():
